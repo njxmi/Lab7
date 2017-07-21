@@ -10,8 +10,12 @@ var items = [
 	{name: "rotisserie chicken",	price: 5.99},
 	{name: "almonds", 				    price: 9.99},	];
 
-//original code
-/*	function listGroceries(items) {
+	items.forEach(function(items)){
+		console.log(items.name + items.price);
+	}0;
+	
+//code in original verison
+/* function listGroceries(items) {
   var itemName = "";
   var itemPrice = 0;
   groceries.forEach(function(item) {
@@ -20,54 +24,15 @@ var items = [
   }
   );
 	}
-		  console.log(itemName + itemPrice);
+		  console.log(itemName + itemPrice); */
 		  
-		  */
+for each (var item in onbject) {
+	sum += item;
+}
+console.log ("$" + sum); //total price of groceries
+		  
+		 
   
 	
-//trying to set up list of items, some of which are subject to sales tax
-
-var totalBill = 0;
-
-
-totalCost += getPriceOfChicken(priceTax);
-
-console.log("Your total is $" + totalCost.toFixed(2));
-
-function getPriceOfChicken(isCooked, addTax) {
-    var priceTax;
-    if (isCooked) {
-        priceTax = 5.99;
-    } else {
-        priceTax = 3.99;
-    }
-    if (addTax) {
-        priceTax += (priceTax * 1.06);
-    }
-    return priceTax;
-}
-
-
-
-function getPriceOfItem(choice) {
-  switch (choice) {
-      case "beans":
-		return 0.99;
-      case "rice":
-		return 3.99;
-      case "flour":
-		return 1.99
-      case "truffle oil":
-          return 7.25
-      case "spinach":
-		return 2.00
-      case "artichokes":
-          return 2.5;
-      case "almonds":
-          return 9.99
-  }
-}
-
-function calcTotal(subtotalNonTaxable){
-  return subtotalTaxable + ;  
-}
+/* In Michigan sales tax is not actually collected on groceries, but may be used in this exercise regardless
+*/
